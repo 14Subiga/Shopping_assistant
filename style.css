@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+nav button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+nav button.active-tab {
+    background-color: #4CAF50;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+    
+}
+
+#shopping-list {
+    list-style: none;
+    padding: 0;
+}
+
+#shopping-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.center-content h2,
+.center-content p {
+    margin: 10px 0; 
+}
+
+.center {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.budget-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.add-item-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%;
+    text-align: center;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+table tfoot td {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button:active {
+    background-color: #3e8e41;
+}
+
+/* Shopping Table Styles */
+#shopping-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%;
+}
+
+#shopping-table th,
+#shopping-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+#shopping-table th {
+    background-color: #f2f2f2;
+}
+
+#shopping-table .button {
+    cursor: pointer;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#shopping-table .edit-button {
+    background-color: #4CAF50;
+}
+
+#shopping-table .remove-button {
+    background-color: #4CAF50;
+}
+
+#shopping-table .button:hover {
+    background-color: darkgreen;
+}
+
+#shopping-table .edit-button:hover {
+    background-color: #4CAF50;
+}
+
+#shopping-table .remove-button:hover {
+    background-color: #4CAF50;
+}
+
+/* Style the buttons outside the table */
+#shopping-table .item-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#shopping-table .item-actions .button {
+    padding: 5px 10px;
+    margin: 0;
+}
+.hidden1
+{
+    text-align: center;
+    /* display: none; */
+}

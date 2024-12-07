@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Grocery Shopping Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Grocery Assistant</h1>
+        <nav>
+            <button id="home-tab" class="active-tab">Home</button>
+            <button id="list-tab">Lists</button>
+            <button id="settings-tab">Settings</button>
+        </nav>
+    </header>
+    <main>
+        <!-- Home Section -->
+        <section id="home-section">
+            <div class="center-content">
+                <h2>Hello!</h2> 
+                <h2>Welcome!</h2>
+                <p>Your ultimate assistant for smart grocery shopping.</p>
+                <p>Use the tabs to explore features.</p>
+            </div>
+        </section>
+        
+        <!-- Updated Lists Section -->
+        <section id="list-section" class="hidden">
+            <h2 class="center">Shopping List</h2>
+            <div class="budget-container">
+                <h3>Budget: Rs.<span id="budget-display">0</span></h3>
+                <button id="set-budget" class="button">Set Budget</button>
+            </div>
+            <div class="add-item-container">
+                <input type="text" id="item-name" placeholder="Item Name" />
+                <input type="number" id="item-amount" placeholder="Amount (Rs.)" />
+                <button id="add-item" class="button">Add Item</button>
+            </div>
+            <table id="shopping-table" class="center">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Amount(Rs)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td id="total-cost" colspan="2">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings-section" class="hidden1">
+            <h2>Settings</h2>
+            <p>Tutorial: To add items, go to the 'Lists' tab and use the input field.</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
